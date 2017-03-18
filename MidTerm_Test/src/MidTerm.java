@@ -75,7 +75,7 @@ public class MidTerm {
 					resultArray.add(1); //First element is always 1
 				}
 				else if(j<i){
-					resultArray.add(list.get(j-1)+list.get(j)); //Get values from original array and add
+					resultArray.add(list.get(j-1)+list.get(j)); //Get values from intial array and add
 				}
 				else if(j==i){   
 					resultArray.add(1); //Last element is always 1
@@ -123,5 +123,4 @@ public class MidTerm {
 		getRow(4);
 
 	}
-
 }
