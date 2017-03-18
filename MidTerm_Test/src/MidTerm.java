@@ -71,14 +71,14 @@ public class MidTerm {
 
 		for(int i=1;i<=rowIndex;i++){
 			for(int j=0;j<=i;j++){
-				if(j==0){	//First element is always 0
-					resultArray.add(1);
+				if(j==0){	    
+					resultArray.add(1); //First element is always 1
 				}
 				else if(j<i){
 					resultArray.add(list.get(j-1)+list.get(j)); //Get values from original array and add
 				}
-				else if(j==i){ //Last element is always 0
-					resultArray.add(1);
+				else if(j==i){   
+					resultArray.add(1); //Last element is always 1
 				}
 			}
 			list = resultArray;
