@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class MidTerm {
 
-	public static <E> void reverse(ArrayList<E> list){
+	public static <E> void reverse(ArrayList<E> list){             //correct
 
 		int len=list.size()-1; 		//len = 3-1 = 2
 		for(int i=0; i<len; i++) {	//i=0,i=1 (i=2 is not removed)
@@ -18,7 +18,7 @@ public class MidTerm {
 		System.out.println(list);
 	}
 
-	public static String generateStrings(String s1, String s2){
+	public static String generateStrings(String s1, String s2){     //one place wrong(-2): if s1 is "abc", s2 is "def", your output is {ad ae af bd be bf cd ce cf cf}, one more "cf" at the end.
 		String newString = "";
 		for(int i=0;i<s1.length();i++){
 			for(int j=0;j<s2.length();j++){
@@ -29,7 +29,7 @@ public class MidTerm {
 		return newString;
 	}
 
-	public static int singleNumber(int[] nums){
+	public static int singleNumber(int[] nums){             //correct
 		Set<Integer> set = new HashSet<Integer>();
 		for(int result: nums){
 			if(!set.add(result)){
@@ -40,7 +40,7 @@ public class MidTerm {
 		return iterator.next();
 	}
 
-	public static int[] twoSum(int[] nums, int target){
+	public static int[] twoSum(int[] nums, int target){        //correct
 		Map<Integer,Integer> map = new HashMap<Integer,Integer>();
 		int[] result = new int[2];
 		for(int i=0;i<nums.length;i++){
@@ -57,7 +57,7 @@ public class MidTerm {
 		return result;
 	}
 
-	public static List<Integer> getRow(int rowIndex){
+	public static List<Integer> getRow(int rowIndex){      //correct
 
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(1);
